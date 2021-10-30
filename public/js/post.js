@@ -6,7 +6,7 @@ $(function () {
     const deleteBtn = $("#delete");
     const toastDiv = $(".toast-add");
     const toastUpdate = $(".toast-update");
-// function for creating a post
+// function to create a post
     const postSubmitHandler = () => {
         const title = titleInput.val().trim();
         const content = contentInput.val().trim();
@@ -17,6 +17,24 @@ $(function () {
             data: { title, content },
             complete: function () {
                 let toast = new bootstrap.Toast(toastDiv);
+                toast.show();
+            },
+
+        });
+    };
+    // function to edit a post
+    const postUpdateHandler = () => {
+        const title = titleInput.val().trim();
+        const content = contentInput.val().trim();
+        let url = $(location).attr("href");
+        let id = url.split("/").at(-1);
+
+        $.ajax({
+            method: "PUT",
+            url: `/api/post/${id}`,
+            data: { title, content },
+            complete: function () {
+                let toast = new bootstrap.Toast(toastUpdate);
                 toast.show();
             },
 
