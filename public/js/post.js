@@ -63,3 +63,20 @@ $(function () {
             return;
         } 
     };
+    postBtn.click(function(e) {
+        e.preventDefault();
+        postSubmitHandler();
+    });
+
+    updateBtn.click(function(e) {
+        e.preventDefault();
+        postUpdateHandler();
+    });
+
+    deleteBtn.click(function(e) {
+        e.preventDefault();
+        confirmDelete();
+    });
+
+
+});
