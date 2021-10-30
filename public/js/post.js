@@ -55,3 +55,11 @@ $(function () {
         });
 
     };
+    const confirmDelete = () => {
+        const conDelete = confirm("Are you sure you would like to delete your post?");
+        if (conDelete) {
+            postDeleteHandler();
+        } else {
+            return;
+        } 
+    };
