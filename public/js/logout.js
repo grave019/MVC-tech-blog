@@ -1,5 +1,3 @@
-20 lines (16 sloc)  410 Bytes
-   
 $(function () {
     const logoutBtn = $("#logout");
 // function for logging out of session
