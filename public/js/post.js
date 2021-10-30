@@ -40,3 +40,18 @@ $(function () {
 
         });
     };
+    // function to delete a post
+    const postDeleteHandler = () => {
+        let url = $(location).attr("href");
+        let id = url.split("/").at(-1);
+
+        $.ajax({
+            method: "DELETE",
+            url: `/api/post/${id}`,
+            complete: function () {
+                location.replace("/dashboard");
+            },
+
+        });
+
+    };
