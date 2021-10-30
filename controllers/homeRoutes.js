@@ -61,7 +61,7 @@ router.get("/login", async (req, res) => {
     }
 });
 
-// get route for rendering dashboard page
+//route to render dashboard page
 router.get("/dashboard", async (req, res) => {
     try {
         const userPosts = await Post.findAll({
@@ -80,3 +80,22 @@ router.get("/dashboard", async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+//route to view a post
+router.get("/post/:id", async (req, res) => {
+    try {
+        const postData = await Post.findByPk(req.params.id);
+
+        const post = postData.get({ plain: true });
+
+        res.render("editPost", {
+            post,
+            loggedIn: true
+        });
+    } catch (err) {
+        res.status(500).json(err);
+
+    }
+});
+
+module.exports = router;
