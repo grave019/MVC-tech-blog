@@ -1,6 +1,7 @@
 h1.jumbo {
     font-family: 'Merienda', cursive;
     font-size: 90px;
+    font-weight: 700;
 }
 
 h1.new-post {
@@ -12,4 +13,29 @@ header.top {
 }
 header.post-header {
     background-color: rgb(180, 173, 173);
+}
+li.nav-item {
+    border-radius: 2.5px;
+    margin: 5px;
+    background-color: white;
+}
+a#logout:hover {
+    cursor: pointer;
+
+}
+div.main-post {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+div.user-post {
+    background-color: rgb(219, 221, 221);
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+div.commentRen {
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
 }
