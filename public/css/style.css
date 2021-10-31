@@ -1,3 +1,6 @@
+body {
+    background-color: rgb(214, 217, 219);
+}
 h1.jumbo {
     font-family: 'Merienda', cursive;
     font-size: 90px;
@@ -12,12 +15,12 @@ header.top {
     background-color: rgb(156, 17, 17);
 }
 header.post-header {
-    background-color: rgb(180, 173, 173);
+    background-color: rgb(104, 100, 100);
 }
 li.nav-item {
     border-radius: 2.5px;
     margin: 5px;
-    background-color: white;
+    background-color: rgb(245, 239, 239);
 }
 a#logout:hover {
     cursor: pointer;
