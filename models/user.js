@@ -7,7 +7,7 @@ class User extends Model {
         return bcrypt.compareSync(loginPw, this.password);
     }
 }
-user.init(
+User.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -34,7 +34,7 @@ user.init(
             },
         },
     },
-    {
+     {
         hooks: {
             beforeCreate: async (newUserData) => {
                 newUserData.password = await bcrypt.hash(newUserData.password, 10);
@@ -50,4 +50,4 @@ user.init(
     }
 );
 
-module.exports = user;
+module.exports = User;
