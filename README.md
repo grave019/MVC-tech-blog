@@ -4,7 +4,7 @@
 
   ## Description
 
-  creating a tech blog with MVC layout to connect to a Database
+  Creating a tech blog with MVC layout to connect to a mySQL Database. Built with mySQL, Sequelize, express, Handlebars and dotenv.
   
   Click the link below to visit my deployed page.
 
@@ -72,8 +72,8 @@
 
   ## Contact
   
-  GitHub Username: grave019
+GitHub Username: grave019
  
-  Link to Github account[grave019](https://github.com/grave019)
+Link to Github account[grave019](https://github.com/grave019)
 
   Email: brent.r.graves82@gmail.com
