@@ -7,7 +7,7 @@ class User extends Model {
         return bcrypt.compareSync(loginPw, this.password);
     }
 }
-User.init(
+user.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -50,4 +50,4 @@ User.init(
     }
 );
 
-module.exports = User;
+module.exports = user;
