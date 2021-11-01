@@ -34,7 +34,7 @@
 
   ## Installation
   
-  npm start   
+  npm start also make sure you are connected to local server and that has your database created.
 
   ## Test
 
@@ -46,11 +46,36 @@
 
   ## Visualization
 
-  placeholder to add images or other media
+Mockup of page:
+![Mockup of page](images/mockup.gif)
+
+Expected MVC Connections
+![MVC Connections](images/MVC%20expected%20layout.png)
+
+NPM Start outcome in terminal connected to host 3001
+![terminal](images/success%20npm%20start.png)
+
+Homepage of Deployed Heroku Site.
+![homepage](images/homepage.png)
+
+Login  a username email and password must be created to assess the full functionality of the site
+![login](images/login%20failed.png)
+
+Create a post
+![create post](images/create%20post.png)
+
+Edit a post
+![edit post](images/edit%20post.png)
+
+Delete a post
+![delete a post](images/delete%20post.png)
+
+Updated Post
+![update a post](images/updated%20board.png)
 
   ## Acknowledgements
 
-  Brent Graves Fenix Sampson Dan Rosenbaum and John Dinsmore
+  Brent Graves Fenix Sampson Dan Rosenbaum, Gabriel Cavalcante Causin, and John Dinsmore
 
   ## Contributions
 
@@ -58,7 +83,7 @@
 
   ## Resources
  
-  eloquent javascript, stack overflow, inclass project and activities
+  Eloquent Javascript, Stack Overflow, inclass project and activities
 
   ## License
 
